@@ -5,17 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96807e0d-461b-4355-bc2e-d504c4e3d7d5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/JsonGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Passenger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Trip.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TripTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/ConfigQA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/ApiHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/JsonGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/JsonGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Passenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Trip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TripTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TripTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -32,9 +33,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2lFC0MCruRic6BHfGytrIIe3qnH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -46,12 +47,15 @@
     "JUnit.TripTest.createTrip.executor": "Run",
     "JUnit.TripTest.deleteTrip.executor": "Run",
     "JUnit.TripTest.getTrip.executor": "Run",
+    "JUnit.TripTest.putTrip.executor": "Run",
+    "JUnit.TripTest.testJsonSerialization.executor": "Run",
     "JUnit.TripTest.updateTrip.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/rmerzliakov/IdeaProjects/AutotestProject/src/test/java",
     "last_opened_file_path": "C:/Users/rmerzliakov/IdeaProjects/myPrjct",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -62,13 +66,20 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="dictionaries" />
+      <recent name="model" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\rmerzliakov\IdeaProjects\AutotestProject\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dictionaries" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.TripTest.deleteTrip">
@@ -102,11 +113,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TripTest.updateTrip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TripTest.putTrip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AutotestProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TripTest" />
-      <option name="METHOD_NAME" value="updateTrip" />
+      <option name="METHOD_NAME" value="putTrip" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TripTest.testJsonSerialization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AutotestProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TripTest" />
+      <option name="METHOD_NAME" value="testJsonSerialization" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,9 +136,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TripTest.deleteTrip" />
-        <item itemvalue="JUnit.TripTest.updateTrip" />
+        <item itemvalue="JUnit.TripTest.putTrip" />
         <item itemvalue="JUnit.TripTest.getTrip" />
         <item itemvalue="JUnit.TripTest.createTrip" />
+        <item itemvalue="JUnit.TripTest.testJsonSerialization" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +159,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724766218717</updated>
-      <workItem from="1724766219945" duration="15947000" />
+      <workItem from="1724766219945" duration="24594000" />
+      <workItem from="1724923667188" duration="65000" />
+      <workItem from="1724923744153" duration="11841000" />
     </task>
     <servers />
   </component>

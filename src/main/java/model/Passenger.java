@@ -21,6 +21,10 @@ public class Passenger {
             passenger = new Passenger();
         }
 
+        public Builder withId(Long id) {
+            return this;
+        }
+
         public Builder withRandomCompletely() {
             passenger.firstName = RandomStringUtils.random(5, true, false);
             passenger.middleName = RandomStringUtils.random(5, true, false);

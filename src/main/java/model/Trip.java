@@ -36,6 +36,12 @@ public class Trip {
             trip = new Trip();
             objectMapper.registerModule(new JavaTimeModule());
         }
+
+        public Builder withId(Long id) {
+            trip.id = id;
+            return this;
+        }
+
         public Builder withPassengers(List<Passenger> passengerList) {
             trip.passengerList.addAll(passengerList);
             return this;
