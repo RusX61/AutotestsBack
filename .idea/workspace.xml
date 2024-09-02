@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96807e0d-461b-4355-bc2e-d504c4e3d7d5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/ConfigQA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/ApiHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionaries/IComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/TripComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/TripSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/JsonGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/JsonGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Passenger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Trip.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TripTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TripTest.java" afterDir="false" />
@@ -45,10 +43,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.TripTest.createTrip.executor": "Run",
-    "JUnit.TripTest.deleteTrip.executor": "Run",
+    "JUnit.TripTest.deleteTrip.executor": "Debug",
+    "JUnit.TripTest.executor": "Run",
     "JUnit.TripTest.getTrip.executor": "Run",
     "JUnit.TripTest.putTrip.executor": "Run",
     "JUnit.TripTest.testJsonSerialization.executor": "Run",
+    "JUnit.TripTest.testMethod.executor": "Run",
     "JUnit.TripTest.updateTrip.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -78,11 +78,23 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\rmerzliakov\IdeaProjects\AutotestProject\src\main\java" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="dictionaries" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TripTest.deleteTrip">
+  <component name="RunManager" selected="JUnit.TripTest">
+    <configuration name="TripTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AutotestProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TripTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TripTest.createTrip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AutotestProject" />
       <option name="PACKAGE_NAME" value="" />
@@ -113,21 +125,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TripTest.putTrip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TripTest.testMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AutotestProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TripTest" />
-      <option name="METHOD_NAME" value="putTrip" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TripTest.testJsonSerialization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AutotestProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TripTest" />
-      <option name="METHOD_NAME" value="testJsonSerialization" />
+      <option name="METHOD_NAME" value="testMethod" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TripTest.deleteTrip" />
-        <item itemvalue="JUnit.TripTest.putTrip" />
+        <item itemvalue="JUnit.TripTest" />
         <item itemvalue="JUnit.TripTest.getTrip" />
+        <item itemvalue="JUnit.TripTest.deleteTrip" />
         <item itemvalue="JUnit.TripTest.createTrip" />
-        <item itemvalue="JUnit.TripTest.testJsonSerialization" />
+        <item itemvalue="JUnit.TripTest.testMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +163,8 @@
       <updated>1724766218717</updated>
       <workItem from="1724766219945" duration="24594000" />
       <workItem from="1724923667188" duration="65000" />
-      <workItem from="1724923744153" duration="11841000" />
+      <workItem from="1724923744153" duration="20146000" />
+      <workItem from="1725025621829" duration="7690000" />
     </task>
     <servers />
   </component>
